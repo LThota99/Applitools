@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://presbyterian-hospital.phs.org/Pages/default.aspx</loc>
+    <priority>1.0</priority>
+    <lastmod>2023-02-13</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://presbyterian-hospital.phs.org/Pages/privacy-security.aspx</loc>
+    <priority>1.0</priority>
+    <lastmod>2018-07-16</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://presbyterian-hospital.phs.org/Pages/terms-of-use.aspx</loc>
+    <priority>1.0</priority>
+    <lastmod>2018-07-16</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://presbyterian-hospital.phs.org/Pages/terms-of-use-espanol.aspx</loc>
+    <priority>1.0</priority>
+    <lastmod>2018-07-16</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+</urlset>

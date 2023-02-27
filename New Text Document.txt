@@ -1,0 +1,22 @@
+
+
+curl https://rust-medical-center.phs.org/sitemap.xml -o rust-sitemap.xml
+
+curl https://espanola-hospital.phs.org/sitemap.xml -o espanola-sitemap.xml
+
+curl https://danctrigg-memorial-hospital.phs.org/sitemap.xml -o danctrigg-sitemap.xml
+
+curl https://socorro-general-hospital.phs.org/sitemap.xml -o socorro-sitemap.xml
+
+curl https://lincoln-county-medical-center.phs.org/sitemap.xml -o lincoln-sitemap.xml
+
+curl https://plains-regional-medical-center.phs.org/sitemap.xml -o plains-sitemap.xml
+
+curl https://santa-fe-medical-center.phs.org/sitemap.xml -o santafe-sitemap.xml
+
+
+Java -jar ApplitoolsSimpleTestRunner.jar job-sitemap.xml "-var[batchName,%batchName%]" "-var[batchId,%batchID%]" "-var[appName,%appName%-presbyterian-hospital]" "-var[sitemapUrl,presbyterian-sitemap.xml]" "-var[protocol,%protocol%]" "-var[urlString,%url%]" "-var[configName,%config%]" "-var[envName,%env%]" "-var[baselineBranch,%baselineBranch%]" "-var[saveFailedTests,%saveFailTests%]"
+Java -jar ApplitoolsSimpleTestRunner.jar job-sitemap.xml "-var[batchName,%batchName%]" "-var[batchId,%batchID%]" "-var[appName,%appName%-kaseman-hospital]" "-var[sitemapUrl,kaseman-sitemap.xml]" "-var[protocol,%protocol%]" "-var[urlString,%url%]" "-var[configName,%config%]" "-var[envName,%env%]" "-var[baselineBranch,%baselineBranch%]" "-var[saveFailedTests,%saveFailTests%]"
+set APPLITOOLS_SERVER_URL=https://eyesapi.applitools.com
+set APPLITOOLS_API_KEY=NZudHQ103Pfmo5k50wIQN1011027C3M6y57S5rcl3XwYAcjLw110               
+curl -v -X DELETE "%APPLITOOLS_SERVER_URL%/api/sessions/batches/%batchID%/close/bypointerid?apiKey=%APPLITOOLS_API_KEY%"
