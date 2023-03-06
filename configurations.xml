@@ -1,0 +1,92 @@
+<definitions>
+
+  <ChromeOptions name="headless">
+    <argument>--headless</argument>
+  </ChromeOptions>
+  <configuration name="chromeGrid">
+
+    <applitools>applitoolsConf.xml</applitools>
+
+    <driver useChromeOptions="headless">chrome</driver>
+    <viewport width="1200" height="600"></viewport>
+
+    <visualGrid>
+
+      <browser type="chrome" width="1200" height="600" />
+    </visualGrid>
+
+  </configuration>
+  <configuration name="chromeGrid2">
+
+    <applitools>applitoolsConf.xml</applitools>
+
+    <driver useChromeOptions="headless">chrome</driver>
+    <viewport width="1200" height="600"></viewport>
+
+    <visualGrid>
+
+      <browser type="chrome" width="1200" height="600" />
+      <browser type="chrome" width="1600" height="600" />
+      <browser type="chrome" width="800" height="600" />
+
+      <browser type="firefox" width="1200" height="600" />
+      <browser type="firefox" width="1600" height="600" />
+      <browser type="firefox" width="800" height="600" />
+
+      <browser type="safari" width="1200" height="600" />
+      <browser type="safari" width="1600" height="600" />
+      <browser type="safari" width="800" height="600" />
+
+    </visualGrid>
+
+  </configuration>
+  <configuration name="chromeLocal">
+    <applitools>applitoolsConf.xml</applitools>
+
+    <driver useChromeOptions="headless">chrome</driver>
+
+    <viewport width="1200" height="600"></viewport>
+  </configuration>
+  <configuration name="prod">
+
+    <applitools>applitoolsConf_Prod.xml</applitools>
+
+    <driver useChromeOptions="headless">chrome</driver>
+    <viewport width="1200" height="600"></viewport>
+
+    <visualGrid>
+
+      <browser type="chrome" width="1200" height="600" />
+
+    </visualGrid>
+
+  </configuration>
+  <configuration name="dev">
+
+    <applitools>applitoolsConf_dev.xml</applitools>
+
+    <driver useChromeOptions="headless">chrome</driver>
+    <viewport width="1200" height="600"></viewport>
+
+    <visualGrid>
+
+      <browser type="chrome" width="1200" height="600" />
+
+    </visualGrid>
+
+  </configuration>
+<configuration name="test">
+
+    <applitools>applitoolsConf_dev.xml</applitools>
+
+    <driver useChromeOptions="headless">chrome</driver>
+    <viewport width="1200" height="600"></viewport>
+
+    <visualGrid>
+
+      <browser type="chrome" width="1200" height="600" />
+
+    </visualGrid>
+
+  </configuration>
+</definitions>
