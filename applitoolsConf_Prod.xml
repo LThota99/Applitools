@@ -1,5 +1,0 @@
-<settings>
-	<apikey>NZudHQ103Pfmo5k50wIQN1011027C3M6y57S5rcl3XwYAcjLw110</apikey>
-	<Branch>exeVar[envName]</Branch>
-	<SaveFailedTests>exeVar[saveFailedTests]</SaveFailedTests>
-</settings>
