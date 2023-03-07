@@ -3,7 +3,7 @@
   <batch name="exeVar[batchName]" id="exeVar[batchId]" dontClose="true">
     <test appname="exeVar[appName]">
       <configurations names="exeVar[configName]" />
-      <SmartSplit to="sitemap url groups" max="10" path="exeVar[sitemapUrl]" />
+      <SmartSplit to="sitemap url groups" max="2" path="exeVar[sitemapUrl]" maxAttempts="3"/>
       <execute>
         <action type="crawl" from="sitemap.xml file" createSeparateTests="true" path="exeVar[sitemapUrl]">
           <foreach>
@@ -12,8 +12,8 @@
             <action type="function-replace" in="exp[%newString%]" replace=".phs.org" with="exeVar[urlString]" OutputVariable="finalString" />
             <action type="navigate">exp[%url%]</action>
             <action type="forcepageload" />
-            <!-- <action type="checkWindow" stepName="exp[%url%]">exp[%url%]</action> -->
-            <action type="check" target="window" stepName="exp[%finalString%]" testName="exp[%testNameString%]" fullPage="true" createSeparateTests="true"></action>
+
+            <action type="check" target="window" stepName="exp[%finalString%]" testName="exp[%testNameString%]" fullPage="true" deleteOn="exeVar[deleteOnFinish]" createSeparateTests="true"></action>
           </foreach>
         </action>
       </execute>
